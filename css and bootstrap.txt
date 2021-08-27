@@ -1,0 +1,40 @@
+CSS
+------------------------
+padding
+background-color
+box-shadow
+font-size
+
+
+Bootstrap Classes
+--------------------------------
+card
+text-nowrap
+mx-2
+my-2
+px-4
+py-2
+bg-dark     //background-color
+
+row
+col-md-2
+
+text-color
+-------
+text-primary
+text-danger
+text-success
+dark,light,info
+
+
+baground-color
+-------
+bg-primary
+bg-danger
+bg-success
+dark,light,info
+
+
+button
+-----------------------
+btn btn-primary

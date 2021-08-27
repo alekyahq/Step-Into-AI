@@ -1,0 +1,57 @@
+body{
+    background-color: #2196F3;
+
+    /* top right bottom left*/
+    /* padding: 3% 5% 3%  5%;  */
+
+    /* top-bottom right-left*/
+    padding: 3% 5%;
+
+           
+   
+}
+
+.main-card{
+    height: 85vh;
+    padding: 1% 4%;
+}
+
+.navbar{
+    box-shadow: none;
+    background-color: white;
+}
+
+
+/* Styles for wrapping the search box */
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 3.375rem;
+ 
+
+}
+
+.nav-item-small{
+    font-size: 12px;
+     font-weight: bold;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 4;
+    display: block;
+    width: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.avatar{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    margin: 22px;
+    border-radius: 1%;
+}
