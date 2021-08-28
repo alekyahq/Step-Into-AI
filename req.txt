@@ -1,0 +1,4 @@
+html tags (table, forms, iframe, anchor, header, footer, svg, path and linking)
+css sizes and colors, reponsive, font
+bootstrap: container, shadow, border, d-flex, table
+

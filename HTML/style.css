@@ -12,7 +12,7 @@ body{
 }
 
 .main-card{
-    height: 85vh;
+    height: 110vh;
     padding: 1% 4%;
 }
 
@@ -54,4 +54,33 @@ body{
     object-fit: cover;
     margin: 22px;
     border-radius: 1%;
+}
+
+.light-text{
+    color:rgba(128, 128, 128, 0.795)
+}
+
+tr{
+    border: none;
+}
+
+th{
+    border: none;
+}
+
+td{
+    border: none;
+    padding: 10px 10px !important;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.575);
+}
+
+.my-badge{
+    height: 7px;
+    width: 7px;
+    padding: 2px;
+    position: absolute;
+    right: 8px;
+    top:18px;
+    background-color: rgb(15, 216, 15) !important;
 }
