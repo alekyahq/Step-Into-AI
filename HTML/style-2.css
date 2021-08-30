@@ -1,0 +1,34 @@
+body{
+    padding: 6% 15%;
+    padding-bottom: 0px;
+    background-color: rgba(128, 0, 128, 0.082);
+}
+.outer-card{
+    height: 110vh;
+    border-radius: 30px 30px 0px 0px; 
+    background-color: rgba(139, 60, 175, 0.521);
+}
+.inner-card{
+     height: 65%; 
+     width: 70%;
+     background-color: white;
+     position: absolute;
+     top:22%;
+     left:15%;
+     border-radius: 30px; 
+
+}
+
+.center-area{
+    background-color: rgb(241, 236, 236);
+}
+
+.top-nav{
+    width: 70%;
+    margin: auto;
+    
+}
+
+.form-control{
+    background-color: rgb(233, 229, 229);
+}
