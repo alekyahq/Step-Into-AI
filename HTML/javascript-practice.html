@@ -5,12 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+     <!-- Font Awesome -->
+     <link
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+     rel="stylesheet"
+     />
+     <!-- Google Fonts -->
+     <link
+     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+     rel="stylesheet"
+     />
+     <!-- MDB -->
+     <link
+     href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+     rel="stylesheet"
+     />
+
     
 </head>
-<body>
-    
+<body style="background-color: rgba(57, 6, 116, 0.473);">
 
-    <script src="js/search_user.js">
+
+    <!-- <h1 id="main_heading" class="big-text">Heading</h1> -->
+
+
+    <div  class="container p-4 card " style="min-height: 100vh;">
+
+
+        <form action='#'  class="border mx-auto p-4  card text-center" style="width: 400px;">
+
+            <p id="message"></p>
+            <select id="item_name"  class="form-select">
+                <option>shirts</option>
+                <option>tshirt</option>
+                <option>jeans</option>
+                <option>blazer</option>
+            </select> <br>
+         
+            <input type="number"  value="" id='item_count' class="form-control"  placeholder="stock needed"> <br>
+    
+                <button class="btn btn-sm btn-outline-primary" onclick="order_item()">Place Order</button>
+            </form>
+        <hr>
+
+        <h2 class="text-center">All form inputs</h2>
+        <form action='#'  class="border mx-auto p-4  card text-center" style="width: 400px;">
+
+            <p id="message"></p>
+            <select id="item_name"  class="form-select">
+                <option>shirts</option>
+                <option>tshirt</option>
+                <option>jeans</option>
+                <option>blazer</option>
+            </select> <br>
+         
+            <input value="" id='item_count' class="form-control"  placeholder="stock needed"> <br>
+
+            <label>Describe your requirement</label>
+            <textarea class="form-control"></textarea> <br />
+
+            <label>Text</label>
+            <input type="text"  class="form-control"> <br>
+
+
+            <label>Number</label>
+            <input type="number"  class="form-control"> <br>
+
+            <label>Date</label>
+            <input  type="date" class="form-control"> <br>
+
+
+            <label>Time</label>
+            <input  type="time" class="form-control"> <br>
+
+            <label>Email</label>
+            <input type="email" class="form-control"> <br>
+
+            <label>Phone</label>
+            <input type="phone"  class="form-control"> <br>
+
+            <label>File</label>
+            <input type="file"  class="form-control"> <br>
+          
+
+            <input class="btn btn-primary" type="submit" value="Send">
+
+        </form>
+    </div>
+
+
+
+
+
+    <script src="js/DOM.js"> </script>
+    <script src="js/store.js">
     </script>
 </body>
 </html>

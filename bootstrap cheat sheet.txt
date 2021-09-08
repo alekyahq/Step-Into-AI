@@ -29,7 +29,7 @@ syntax: text-dark
 
 > form classes
 1) input,textarea: form-control
-2) select dropdown : custom-select
+2) select dropdown : form-select
 
 
 

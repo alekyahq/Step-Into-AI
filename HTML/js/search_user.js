@@ -46,9 +46,6 @@ function search_user(age,username){
     }
 
 
-
-    
-    
 }
 
 
@@ -62,3 +59,10 @@ search_user(23, "sam")
     //         alert(  users[x]['name']  +      " below 18 aged are not allowed in this roller coaster")
     //     }
     // }
+
+
+
+
+
+
+    
