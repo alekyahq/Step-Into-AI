@@ -88,23 +88,15 @@
             //console.log(data)
 
             for(x = 0; x < data.length; x ++){
-
-                    console.log(data[x]["title"])
-
-
+                console.log(data[x]["title"])
                 document.getElementById("blogs").innerHTML += `
-                
                 <div class="col-12 col-lg-5 mx-4  col-md-5   my-4 p-3 card bg-light border shadow">
-                    <h3>${data[x]['title']}</h3>
-            
-                    <img src="../images/image1.png">
-                    <p>${data[x]["Description"]}</p>
-
-                    <small>${data[x]['AUthor']}</small>
-
-            </div>
-            
-            `
+                        <h3>${data[x]['title']}</h3>
+                        <img src="../images/image1.png">
+                        <p>${data[x]["Description"]}</p>
+                        <small>${data[x]['AUthor']}</small>
+                </div>
+                `
             }
 
         </script>

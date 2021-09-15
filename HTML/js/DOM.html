@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id='search' autocomplete="off" onkeyup="search_item()">
+
+    <ul>
+        <li class="tech">Python</li>
+        <li class="tech">Html</li>
+        <li class="tech">CSS</li>
+        <li class="tech">JavaScript</li>
+    </ul>
+
+<hr>
+    <ul>
+        <li>Python</li>
+        <li>Html</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <script>
+
+        // check substring ( search value in a string)
+       // var my_str = "Python,html";
+        //alert(my_str.includes("html"))
+
+        // convert str to lower case  
+        //alert("HELLO".toLocaleLowerCase())
+        //alert("A".toLocaleLowerCase() == "a")
+
+        // set value of attribute val from js
+        //document.getElementById("search").placeholder = "Helloworld"
+
+        function search_item(){
+            //var list_items = document.getElementsByTagName("li")
+
+
+            var list_items = document.getElementsByClassName("tech")
+
+            var search_text = document.getElementById("search").value.toLocaleLowerCase()
+            for(x=0; x < list_items.length; x++){
+                list_items[x].style.display = "none"
+                if(list_items[x].innerHTML.toLocaleLowerCase().includes(search_text) ){
+                    list_items[x].style.display = "block"
+                }
+
+            }
+        }
+       
+    </script>
+</body>
+</html>
