@@ -88,7 +88,7 @@
 
                                             
                                     for(x in users){
-                                            if(users[x]['name'].includes(text)){
+                                            if(users[x]['name'].includes(text) ||  users[x]['role'].includes(text) || users[x]['Address'].includes(text) ){
                                                 document.getElementById("cards").innerHTML += `
                                                     <div class="container bg-light rounded shadow  p-4 mx-auto " style="width: 400px; height: 200px; margin-top:20px;">
                                                     <h3>${users[x]['name']}</h3>
@@ -104,6 +104,6 @@
     </script>
 
 
-    
+
 </body>
 </html>

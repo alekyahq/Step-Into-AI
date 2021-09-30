@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        rel="stylesheet"
+        />
+
+        <style>
+            canvas { background-color : rgb(255, 254, 254);
+            }
+        </style>
+        <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+        rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body >
+    <div class="container bg-light shadow" style="min-height:100vh">
+        <h2>Charts and Visualizations</h2>
+
+        <a href="https://www.chartjs.org/">1. Charts.js</a>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <canvas id="chartJSContainer" width="600" height="400"></canvas>
+            </div>
+            <div class="col-12 col-md-6">
+                <canvas id="chartJSContainer-line" width="600" height="400"></canvas>
+            </div>
+            <div class="col-12 col-md-6">
+                <canvas id="chartJSContainer-radar" width="600" height="400"></canvas>
+            </div>
+            <div class="col-12 col-md-6">
+                <canvas id="chartJSContainer-doughnut" width="600" height="400"></canvas>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+    var options = {
+        type: 'bar',
+        data: {
+          labels: ["JAN" , "FEB" , "MAR", "APR", "MAY", "JUNE"],
+          datasets: [
+              {
+                label: '# store 1 ',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1,
+                backgroundColor : ["red", "red", "red"]
+
+              },	
+                  {
+                      label: '# of store 2',
+                      data: [7, 11, 5, 8, 3, 7],
+                      borderWidth: 1,
+                      backgroundColor: ["black", "black", "black"]
+
+
+                  }
+              ]
+        },
+        options: {
+            scales: {
+              yAxes: [{
+              ticks: {
+                          reverse: false
+              }
+            }]
+          }
+        }
+      }
+      
+      var ctx = document.getElementById('chartJSContainer').getContext('2d');
+      new Chart(ctx, options);
+
+
+
+      var options = {
+        type: 'line',
+        data: {
+          labels: ["JAN" , "FEB" , "MAR", "APR", "MAY", "JUNE"],
+          datasets: [
+              {
+                label: '# store 1 ',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1,
+                backgroundColor : ["red", "red", "red"]
+
+              },	
+                  {
+                      label: '# of store 2',
+                      data: [7, 11, 5, 8, 3, 7],
+                      borderWidth: 1,
+                      backgroundColor: ["black", "black", "black"]
+
+
+                  }
+              ]
+        },
+        options: {
+            scales: {
+              yAxes: [{
+              ticks: {
+                          reverse: false
+              }
+            }]
+          }
+        }
+      }
+      
+      var ctx = document.getElementById('chartJSContainer-line').getContext('2d');
+      new Chart(ctx, options);
+
+
+      var options = {
+        type: 'radar',
+        data: {
+          labels: ["JAN" , "FEB" , "MAR", "APR", "MAY", "JUNE"],
+          datasets: [
+              {
+                label: '# store 1 ',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1,
+                backgroundColor : ["red", "red", "red"]
+
+              },	
+                  {
+                      label: '# of store 2',
+                      data: [7, 11, 5, 8, 3, 7],
+                      borderWidth: 1,
+                      backgroundColor: ["black", "black", "black"]
+
+
+                  }
+              ]
+        },
+        options: {
+            scales: {
+              yAxes: [{
+              ticks: {
+                          reverse: false
+              }
+            }]
+          }
+        }
+      }
+      
+      var ctx = document.getElementById('chartJSContainer-radar').getContext('2d');
+      new Chart(ctx, options);
+
+
+      var options = {
+        type: 'doughnut',
+        data: {
+          labels: ["JAN" , "FEB" , "MAR", "APR", "MAY", "JUNE"],
+          datasets: [
+              {
+                label: '# store 1 ',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1,
+                backgroundColor : ["red", "red", "red"]
+
+              },	
+                  {
+                      label: '# of store 2',
+                      data: [7, 11, 5, 8, 3, 7],
+                      borderWidth: 1,
+                      backgroundColor: ["black", "black", "black"]
+
+
+                  }
+              ]
+        },
+        options: {
+            scales: {
+              yAxes: [{
+              ticks: {
+                          reverse: false
+              }
+            }]
+          }
+        }
+      }
+      
+      var ctx = document.getElementById('chartJSContainer-doughnut').getContext('2d');
+      new Chart(ctx, options);
+
+    </script>
+
+</body>
+       
+</html>
