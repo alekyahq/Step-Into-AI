@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Timeline | Basic demo</title>
+
+  <style type="text/css">
+    body, html {
+      font-family: sans-serif;
+    }
+  </style>
+
+  <script src="https://visjs.github.io/vis-timeline/standalone/umd/vis-timeline-graph2d.min.js"></script>
+  <link href="https://visjs.github.io/vis-timeline/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<div id="visualization"></div>
+
+<script type="text/javascript">
+  // DOM element where the Timeline will be attached
+  var container = document.getElementById('visualization');
+
+  // Create a DataSet (allows two way data-binding)
+  var items = new vis.DataSet([
+    {id: 1, content: 'logged in ', start: '2014-04-20 10:00'},
+    {id: 2, content: 'completed documentation ', start: '2014-04-20 11:00'},
+    {id: 3, content: 'created protype', start: '2014-04-20 13:00'},
+    {id: 4, content: 'created architecture', start: '2014-04-20 15:00'},
+    {id: 5, content: 'setting up code environment', start: '2014-04-20 16:00'},
+    {id: 6, content: 'logout', start: '2014-04-20 17:00'},
+    ]);
+
+  // Configuration for the Timeline
+  var options = {
+    width: '60%',
+    height: '500px',
+    moveable :true,
+    margin: {
+      item: 50
+    }
+  };
+
+  // Create a Timeline
+  var timeline = new vis.Timeline(container, items, options);
+</script>
+</body>
+</html>
